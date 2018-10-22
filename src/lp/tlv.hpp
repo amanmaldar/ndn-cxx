@@ -46,7 +46,7 @@ enum {
   TxSequence = 840,
   NonDiscovery = 844,
   PrefixAnnouncement = 848,
-  LatencyTag = 903
+  FwdLatencyTag = 903
 };
 
 enum {
