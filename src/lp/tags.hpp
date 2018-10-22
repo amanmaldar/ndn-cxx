@@ -72,6 +72,7 @@ typedef SimpleTag<EmptyValue, 14> NonDiscoveryTag;
  */
 typedef SimpleTag<PrefixAnnouncementHeader, 15> PrefixAnnouncementTag;
 
+typedef SimpleTag<uint64_t, 0x60000002> FwdLatencyTag;
 } // namespace lp
 } // namespace ndn
 

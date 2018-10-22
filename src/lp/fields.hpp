@@ -119,6 +119,10 @@ typedef FieldDecl<field_location_tags::Fragment,
                   tlv::Fragment> FragmentField;
 BOOST_CONCEPT_ASSERT((Field<FragmentField>));
 
+typedef FieldDecl<field_location_tags::Header,
+                          uint64_t,
+                          tlv::FwdLatencyTag> FwdLatencyTagField;
+BOOST_CONCEPT_ASSERT((Field<FwdLatencyTagField>));
 /** \brief Set of all field declarations.
  */
 typedef boost::mpl::set<
@@ -134,7 +138,8 @@ typedef boost::mpl::set<
   AckField,
   TxSequenceField,
   NonDiscoveryField,
-  PrefixAnnouncementField
+  PrefixAnnouncementField,
+  FwdLatencyTagField
   > FieldSet;
 
 } // namespace lp
