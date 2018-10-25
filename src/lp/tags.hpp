@@ -72,7 +72,12 @@ typedef SimpleTag<EmptyValue, 14> NonDiscoveryTag;
  */
 typedef SimpleTag<PrefixAnnouncementHeader, 15> PrefixAnnouncementTag;
 
-typedef SimpleTag<uint64_t, 0x60000002> FwdLatencyTag;
+typedef SimpleTag<uint64_t, 0x60000002> interestBirthTag;
+typedef SimpleTag<uint64_t, 0x60000003> interestArrivalTimeTag;
+typedef SimpleTag<uint64_t, 0x60000004> fwdLatencyTag;
+typedef SimpleTag<uint64_t, 0x60000005> newDataTag;
+typedef SimpleTag<uint64_t, 0x60000006> interestHopsTag;
+
 } // namespace lp
 } // namespace ndn
 

@@ -121,8 +121,32 @@ BOOST_CONCEPT_ASSERT((Field<FragmentField>));
 
 typedef FieldDecl<field_location_tags::Header,
                           uint64_t,
-                          tlv::FwdLatencyTag> FwdLatencyTagField;
-BOOST_CONCEPT_ASSERT((Field<FwdLatencyTagField>));
+                          tlv::interestBirthTag> interestBirthTagField;
+BOOST_CONCEPT_ASSERT((Field<interestBirthTagField>));
+
+
+typedef FieldDecl<field_location_tags::Header,
+                          uint64_t,
+                          tlv::interestArrivalTimeTag> interestArrivalTimeTagField;
+BOOST_CONCEPT_ASSERT((Field<interestArrivalTimeTagField>));
+
+typedef FieldDecl<field_location_tags::Header,
+                          uint64_t,
+                          tlv::fwdLatencyTag> fwdLatencyTagField;
+BOOST_CONCEPT_ASSERT((Field<fwdLatencyTagField>));
+
+typedef FieldDecl<field_location_tags::Header,
+                          uint64_t,
+                          tlv::newDataTag> newDataTagField;
+BOOST_CONCEPT_ASSERT((Field<newDataTagField>));
+
+typedef FieldDecl<field_location_tags::Header,
+                          uint64_t,
+                          tlv::interestHopsTag> interestHopsTagField;
+BOOST_CONCEPT_ASSERT((Field<interestHopsTagField>));
+
+ 
+
 /** \brief Set of all field declarations.
  */
 typedef boost::mpl::set<
@@ -139,7 +163,11 @@ typedef boost::mpl::set<
   TxSequenceField,
   NonDiscoveryField,
   PrefixAnnouncementField,
-  FwdLatencyTagField
+  interestBirthTagField,
+  interestArrivalTimeTagField,
+  fwdLatencyTagField,
+  newDataTagField,
+  interestHopsTagField
   > FieldSet;
 
 } // namespace lp

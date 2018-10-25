@@ -46,8 +46,14 @@ enum {
   TxSequence = 840,
   NonDiscovery = 844,
   PrefixAnnouncement = 848,
-  FwdLatencyTag = 903
+
+  interestBirthTag = 901,
+  interestArrivalTimeTag = 903,
+  fwdLatencyTag = 905,
+  newDataTag = 907,
+  interestHopsTag = 909
 };
+
 
 enum {
   /**
