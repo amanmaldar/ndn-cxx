@@ -160,11 +160,10 @@ typedef boost::mpl::set<
   TxSequenceField,
   NonDiscoveryField,
   PrefixAnnouncementField,
-  interestBirthTagField,
-  interestArrivalTimeTagField,
-  fwdLatencyTagField,
-  newDataTagField,
-  interestHopsTagField
+  intHopsTagField,
+  intArrivalTimeField,
+  intProcessingTimeTagField,
+  dataProduceTimeTagField
   > FieldSet;
 
 } // namespace lp
