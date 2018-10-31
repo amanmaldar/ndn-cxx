@@ -119,6 +119,31 @@ typedef FieldDecl<field_location_tags::Fragment,
                   tlv::Fragment> FragmentField;
 BOOST_CONCEPT_ASSERT((Field<FragmentField>));
 
+
+
+typedef FieldDecl<field_location_tags::Header,
+                          uint8_t,
+                          tlv::intHopsTag> intHopsTagField;
+BOOST_CONCEPT_ASSERT((Field<intHopsTagField>));
+
+
+typedef FieldDecl<field_location_tags::Header,
+                          float,
+                          tlv::intArrivalTimeTag> intArrivalTimeTagField;
+BOOST_CONCEPT_ASSERT((Field<intArrivalTimeTagField>));
+
+typedef FieldDecl<field_location_tags::Header,
+                          float,
+                          tlv::intProcessingTimeTag> intProcessingTimeTagField;
+BOOST_CONCEPT_ASSERT((Field<intProcessingTimeTagField>));
+
+typedef FieldDecl<field_location_tags::Header,
+                          float,
+                          tlv::dataProduceTimeTag> dataProduceTimeTagField;
+BOOST_CONCEPT_ASSERT((Field<dataProduceTimeTagField>));
+
+
+/*
 typedef FieldDecl<field_location_tags::Header,
                           uint64_t,
                           tlv::interestBirthTag> interestBirthTagField;
@@ -144,7 +169,7 @@ typedef FieldDecl<field_location_tags::Header,
                           uint64_t,
                           tlv::interestHopsTag> interestHopsTagField;
 BOOST_CONCEPT_ASSERT((Field<interestHopsTagField>));
-
+*/
  
 
 /** \brief Set of all field declarations.
