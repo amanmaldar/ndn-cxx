@@ -143,34 +143,6 @@ typedef FieldDecl<field_location_tags::Header,
 BOOST_CONCEPT_ASSERT((Field<dataProduceTimeTagField>));
 
 
-/*
-typedef FieldDecl<field_location_tags::Header,
-                          uint64_t,
-                          tlv::interestBirthTag> interestBirthTagField;
-BOOST_CONCEPT_ASSERT((Field<interestBirthTagField>));
-
-
-typedef FieldDecl<field_location_tags::Header,
-                          uint64_t,
-                          tlv::interestArrivalTimeTag> interestArrivalTimeTagField;
-BOOST_CONCEPT_ASSERT((Field<interestArrivalTimeTagField>));
-
-typedef FieldDecl<field_location_tags::Header,
-                          uint64_t,
-                          tlv::fwdLatencyTag> fwdLatencyTagField;
-BOOST_CONCEPT_ASSERT((Field<fwdLatencyTagField>));
-
-typedef FieldDecl<field_location_tags::Header,
-                          uint64_t,
-                          tlv::newDataTag> newDataTagField;
-BOOST_CONCEPT_ASSERT((Field<newDataTagField>));
-
-typedef FieldDecl<field_location_tags::Header,
-                          uint64_t,
-                          tlv::interestHopsTag> interestHopsTagField;
-BOOST_CONCEPT_ASSERT((Field<interestHopsTagField>));
-*/
- 
 
 /** \brief Set of all field declarations.
  */
