@@ -48,8 +48,8 @@ enum {
   PrefixAnnouncement = 848,
   intHopsTag = 901,
   intArrivalTimeTag = 903,
-  intProduceTimeTag = 905,
-  dataProcessingTimeTag = 907  
+  intProcessingTimeTag = 905,
+  dataProduceTimeTag = 907  
 };
 
 
