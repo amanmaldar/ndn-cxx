@@ -46,9 +46,9 @@ enum {
   TxSequence = 840,
   NonDiscovery = 844,
   PrefixAnnouncement = 848,
-  intHopsTag = 901;
-  intArrivalTimeTag = 903;
-  intProduceTimeTag = 905;
+  intHopsTag = 901,
+  intArrivalTimeTag = 903,
+  intProduceTimeTag = 905,
   dataProcessingTimeTag = 907  
 };
 
