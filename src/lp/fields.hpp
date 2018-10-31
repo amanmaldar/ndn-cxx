@@ -161,7 +161,7 @@ typedef boost::mpl::set<
   NonDiscoveryField,
   PrefixAnnouncementField,
   intHopsTagField,
-  intArrivalTimeField,
+  intArrivalTimeTagField,
   intProcessingTimeTagField,
   dataProduceTimeTagField
   > FieldSet;
