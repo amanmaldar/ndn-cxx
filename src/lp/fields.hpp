@@ -122,23 +122,23 @@ BOOST_CONCEPT_ASSERT((Field<FragmentField>));
 
 
 typedef FieldDecl<field_location_tags::Header,
-                          uint8_t,
+                          uint16_t,
                           tlv::intHopsTag> intHopsTagField;
 BOOST_CONCEPT_ASSERT((Field<intHopsTagField>));
 
 
 typedef FieldDecl<field_location_tags::Header,
-                          float,
+                          uint64_t,
                           tlv::intArrivalTimeTag> intArrivalTimeTagField;
 BOOST_CONCEPT_ASSERT((Field<intArrivalTimeTagField>));
 
 typedef FieldDecl<field_location_tags::Header,
-                          float,
+                          uint32_t,
                           tlv::intProcessingTimeTag> intProcessingTimeTagField;
 BOOST_CONCEPT_ASSERT((Field<intProcessingTimeTagField>));
 
 typedef FieldDecl<field_location_tags::Header,
-                          float,
+                          uint64_t,
                           tlv::dataProduceTimeTag> dataProduceTimeTagField;
 BOOST_CONCEPT_ASSERT((Field<dataProduceTimeTagField>));
 
