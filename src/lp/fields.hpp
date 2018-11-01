@@ -122,7 +122,7 @@ BOOST_CONCEPT_ASSERT((Field<FragmentField>));
 
 
 typedef FieldDecl<field_location_tags::Header,
-                          uint16_t,
+                          uint32_t,
                           tlv::intHopsTag> intHopsTagField;
 BOOST_CONCEPT_ASSERT((Field<intHopsTagField>));
 

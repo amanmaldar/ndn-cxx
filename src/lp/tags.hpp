@@ -72,7 +72,7 @@ typedef SimpleTag<EmptyValue, 14> NonDiscoveryTag;
  */
 typedef SimpleTag<PrefixAnnouncementHeader, 15> PrefixAnnouncementTag;
 
-typedef SimpleTag<uint16_t, 0x60000002> intHopsTag;
+typedef SimpleTag<uint32_t, 0x60000002> intHopsTag;
 typedef SimpleTag<uint64_t, 0x60000003> intArrivalTimeTag;
 typedef SimpleTag<uint32_t, 0x60000004> intProcessingTimeTag;
 typedef SimpleTag<uint64_t, 0x60000005> dataProduceTimeTag;
