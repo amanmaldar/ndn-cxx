@@ -119,7 +119,7 @@ typedef FieldDecl<field_location_tags::Fragment,
                   tlv::Fragment> FragmentField;
 BOOST_CONCEPT_ASSERT((Field<FragmentField>));
 
-
+// Declaration for new Tags
 
 typedef FieldDecl<field_location_tags::Header,
                           uint64_t,
